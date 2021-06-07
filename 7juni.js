@@ -62,8 +62,23 @@ function enviarDatos(){
         respuestaCadena.innerHTML += "NO contiene @ <br>";
     }
     //Vamos a escribir el contenido de un string con un carácter separador ("-") entre cada uno de los caracteres del string.
-    
-
+    let caracteres = cadenaDeTexto.split("");
+    let cadenaTemporal = caracteres.join("-")
+    respuestaCadena.innerHTML += cadenaTemporal + "<br>";
 
 }
 
+ /**
+     * 
+     * 
+     * 
+     * 
+     * Ejercicio 4:
+     */
+    let cadena4 = "Hora de inicio de la reunión;04/06/2021 8:57;Título de la reunión;General;Nombre completo;Hora de Unión;Hora de salida;Duración;Correo electrónico;Rol";
+    console.log("EJERCICIO 4:");
+    console.log(cadena4);
+    console.log("El primer (;) esta en la posicion: " + cadena4.indexOf(";"));
+    console.log("El ultimo (;) esta en la posicion: " + cadena4.lastIndexOf(";"));
+
+    let array 
