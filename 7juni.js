@@ -81,4 +81,26 @@ function enviarDatos(){
     console.log("El primer (;) esta en la posicion: " + cadena4.indexOf(";"));
     console.log("El ultimo (;) esta en la posicion: " + cadena4.lastIndexOf(";"));
 
-    let array 
+    // Convertirlo en un array
+    let array = cadena4.split(';');
+    console.log(array);
+    //Indicar la longitud del array
+    console.log("la longitud del array es: " + array.length);
+    //Ordenar el array
+    let arrayOrdenado = array.sort()
+    console.log(arrayOrdenado);
+    // /Recorrer el array e imprimirlo por pantalla.
+    for(i in array){
+        document.getElementById('respuestaEjercicio5').innerHTML += array[i] + '<br>'; 
+    }
+
+
+    /**
+     * 
+     * Ejercicio 6
+     */
+    let string6_1 = "Pepe estaba jugando en la calle";
+    let string6_2 = "Allí Pepe jugaba con pepe y además pepe llegó tarde al colegio. Donde le esperaba Juan.";
+    
+
+
