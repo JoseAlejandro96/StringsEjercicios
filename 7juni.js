@@ -101,6 +101,24 @@ function enviarDatos(){
      */
     let string6_1 = "Pepe estaba jugando en la calle";
     let string6_2 = "Allí Pepe jugaba con pepe y además pepe llegó tarde al colegio. Donde le esperaba Juan.";
-    
+    document.getElementById('respuestaEjercicio6').innerHTML = "Cadenas Originales: <br>" + string6_1 + '<br>' + string6_2 + '<br>'
+    + "Cadenas Modificadas <br>"; 
+
+    let arrayString6_1 = string6_1.split(" ");
+    for(i in arrayString6_1){
+        if(arrayString6_1[i] == "pepe" || arrayString6_1[i] === "Pepe"){
+            arrayString6_1[i] = "Juan"
+        }
+    }
+    string6_1 = arrayString6_1.join(" ");
+    document.getElementById('respuestaEjercicio6').innerHTML += string6_1 + '<br>';
 
 
+    let arrayString6_2 = string6_2.split(" ");
+    for(i in arrayString6_2){
+        if(arrayString6_2[i] == "pepe" || arrayString6_2[i] === "Pepe"){
+            arrayString6_2[i] = "Juan"
+        }
+    }
+    string6_2 = arrayString6_2.join(" ");
+    document.getElementById('respuestaEjercicio6').innerHTML += string6_2 + '<br>';
